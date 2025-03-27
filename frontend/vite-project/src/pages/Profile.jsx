@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Profile() {
   const [user, setUser] = useState(null);
@@ -28,9 +28,15 @@ function Profile() {
       <div className="d-flex vh-100">
         <div className="bg-dark text-white d-flex flex-column align-items-center" style={{ width: "25%" }}>
           <ul className="list-unstyled text-center mt-4">
-            <li className="mb-3">Home</li>
-            <li className="mb-3">Profile</li>
-            <li className="mb-3">Settings</li>
+            <li className="mb-3">
+              <Link to="/" className="nav-link py-2 px-3 sidebar-link">Home</Link>
+            </li>
+            <li className="mb-3">
+              <Link to="/profile" className="nav-link py-2 px-3 sidebar-link">Profile</Link>
+            </li>
+            <li className="mb-3">
+              <Link to="/settings" className="nav-link py-2 px-3 sidebar-link">Settings</Link>
+            </li>
           </ul>
         </div>
 
