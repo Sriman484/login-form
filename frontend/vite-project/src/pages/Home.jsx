@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "animate.css";
 
 const Home = () => {
+
   return (
     <div className="d-flex vh-100 justify-content-center align-items-center text-center">
       <div>
